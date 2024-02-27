@@ -18,12 +18,17 @@
         "importHelpers": true,
         "inlineSourceMap": true,
         "inlineSources": true,
+        // "isolatedModules": true,
         "noImplicitAny": true,
         "noImplicitReturns": true,
         "noFallthroughCasesInSwitch": true,
         "noUnusedLocals": true,
+        "resolveJsonModule": true,
         "skipLibCheck": true,
         "useUnknownInCatchVariables": false,
+        "verbatimModuleSyntax": true,
+
+        "baseUrl": "./",
 
         "paths": {
             "@shared/*": ["./src/shared/*"],
@@ -44,14 +49,5 @@
             "ScriptHost"
         ]
     },
-    "ts-node": {
-        "esm": true,
-        "experimentalSpecifierResolution": "node",
-        "compilerOptions": {
-            "target": "ES5",
-            "module": "CommonJS",
-            "moduleResolution": "Node"
-        }
-    },
-    "include": ["./src/client/**/*", "./src/shared/**/*", "webpack.config.ts"],
+    "include": ["./src/client/**/*", "./src/shared/**/*", "webpack.config.js"]
 }
