@@ -1,14 +1,57 @@
 {
     "compilerOptions": {
-      "target": "ESNext",
-      "module": "ESNext",
-      "moduleResolution": "Node",
-      "jsx": "react",
-      "outDir": "./dist/",
+        "target": "ESNext",
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "jsx": "react-jsx",
+        "outDir": "./dist/",
 
-      "allowJs": true,
-      "allowSyntheticDefaultImports": true,
+        "incremental": true,
+        "tsBuildInfoFile": "./.build/.tsbuildinfo",
 
-      "noImplicitAny": true
-    }
+        "strict": true,
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true,
+        "downlevelIteration": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "importHelpers": true,
+        "inlineSourceMap": true,
+        "inlineSources": true,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "noUnusedLocals": true,
+        "skipLibCheck": true,
+        "useUnknownInCatchVariables": false,
+
+        "paths": {
+            "@shared/*": ["./src/shared/*"],
+            "@client/*": ["./src/client/*"],
+            "@server/*": ["./src/server/*"],
+            "@mui/material": ["./node_modules/@mui/joy"],
+            "*": ["./node_modules/*"]
+        },
+
+        "lib": [
+            "ESNext",
+            "ESNext.AsyncIterable",
+            "ESNext.Promise",
+            "ESNext.String",
+            "ESNext.Symbol",
+            "DOM",
+            "DOM.Iterable",
+            "ScriptHost"
+        ]
+    },
+    "ts-node": {
+        "esm": true,
+        "experimentalSpecifierResolution": "node",
+        "compilerOptions": {
+            "target": "ES5",
+            "module": "CommonJS",
+            "moduleResolution": "Node"
+        }
+    },
+    "include": ["./src/client/**/*", "./src/shared/**/*", "webpack.config.ts"],
 }

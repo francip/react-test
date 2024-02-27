@@ -2,13 +2,16 @@ import path from "path";
 
 import HtmlWebpackPlugin from "html-webpack-plugin";
 
-function devServerConfig() {
+import { Configuration } from "webpack";
+import { Configuration as WebpackDevServerConfiguration } from "webpack-dev-server";
+
+function devServerConfig(): WebpackDevServerConfiguration {
     return {
         port: 8080,
     };
 }
 
-function config() {
+function config(): Configuration {
     return {
         entry: "./src/client/index.tsx",
         resolve: {
