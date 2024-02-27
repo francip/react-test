@@ -1,15 +1,27 @@
 {
     "name": "react-app",
     "version": "1.0.0",
-    "description": "Sample Reactapp with typescript and Webpack",
+    "description": "Sample React/Typescript/Webpack app",
+    "copyright": "Copyright © 2024 Kortexa",
+    "homepage": "https://xn--ysca.cc/",
+    "license": "MIT",
+    "author": {
+        "name": "Franci Penov",
+        "email": "francip@gmail.com"
+    },
+    "keywords": [],
+    "private": true,
+
+    "type": "module",
+
     "main": "index.js",
+
     "scripts": {
         "start": "webpack serve --mode development --open --hot",
         "build": "webpack --mode production",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "author": "",
-    "license": "ISC",
+
     "dependencies": {
         "@babel/runtime": "^7.23.9",
         "react": "^18.2.0",
