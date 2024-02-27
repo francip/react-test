@@ -1,0 +1,23 @@
+# Development artifacts
+.vscode/
+node_modules/
+.build/
+.webpack/
+.firebase/
+build/
+dist/
+lib/
+
+# Logs
+firebase-debug.log
+ui-debug.log
+yarn-error.log
+
+# Runtime data
+
+# Misc
+.env
+.env.*
+.secret
+.secret.*
+.DS_Store
