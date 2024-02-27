@@ -16,6 +16,7 @@
     "scripts": {
         "start": "webpack serve --mode development --open --hot",
         "build": "webpack --mode production",
+        "server:start:ts-node-2": "node --import 'data:text/javascript,import { register } from \"node:module\"; import { pathToFileURL } from \"node:url\"; register(\"ts-node/esm\", pathToFileURL(\"./\"));' ./src/server/index.ts",
         "server:start:ts-node": "ts-node -P tsconfig.server.json ./src/server/index.ts",
         "server:start:tsx": "tsx --watch --tsconfig tsconfig.server.json ./src/server/index.ts",
         "server:build": "tsc -p tsconfig.server.json && tsc-alias",
