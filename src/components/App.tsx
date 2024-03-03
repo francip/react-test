@@ -1,11 +1,11 @@
 import type { ReactNode } from "react";
 
-type AppProps = { num: number };
+type AppProps = { name: string };
 
-export function App({ num }: AppProps): ReactNode {
+export function App({ name }: AppProps): ReactNode {
     return (
         <div>
-            <h1>Hello {num}!</h1>
+            <h1>Hello {name}!</h1>
             <h2>Welcome to your React App</h2>
         </div>
     );

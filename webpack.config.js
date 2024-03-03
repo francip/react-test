@@ -10,7 +10,7 @@ function devServerConfig() {
 
 function config() {
     return {
-        entry: "./src/client/index.tsx",
+        entry: "./src/index.tsx",
         resolve: {
             extensions: [".tsx", ".ts", ".jsx", ".js"],
         },

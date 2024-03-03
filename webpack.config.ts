@@ -2,18 +2,15 @@ import path from "path";
 
 import HtmlWebpackPlugin from "html-webpack-plugin";
 
-import { Configuration } from "webpack";
-import { Configuration as WebpackDevServerConfiguration } from "webpack-dev-server";
-
-function devServerConfig(): WebpackDevServerConfiguration {
+function devServerConfig() {
     return {
         port: 8080,
     };
 }
 
-function config(): Configuration {
+function config() {
     return {
-        entry: "./src/client/index.tsx",
+        entry: "./src/index.tsx",
         resolve: {
             extensions: [".tsx", ".ts", ".jsx", ".js"],
         },
